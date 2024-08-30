@@ -42,7 +42,7 @@ function Dock() {
     })
 
   return (
-    <nav ref={dockButton} className='fixed bottom-20 w-full z-50 dynamic-island opacity-0 hidden'>
+    <nav ref={dockButton} className='fixed bottom-20 -translate-x-2/4 left-2/4 w-full z-50 dynamic-island opacity-0 hidden'>
         <div className='flex justify-center items-center relative'>
             <div className='absolute w-fit bg-[#0066cc]/70 hover:bg-zinc-400/70 backdrop-blur-md backdrop-saturate-150 rounded-full overflow-hidden'>
                 <div className='dock-menu-station flex w-auto justify-around items-center text-sm font-light py-1 px-1'>

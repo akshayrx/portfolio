@@ -5,8 +5,8 @@
 
 @layer base {
   h1 {
-    font-size: 2.25rem;
-    line-height: 1;
+    font-size: 2.15rem;
+    line-height: 1.05;
     letter-spacing: -0.02em;
   }
   @screen sm {
@@ -35,16 +35,16 @@
   }
   @screen 2xl {
     h1 {
-      font-size: 6rem;
-      line-height: 1.2;
-      letter-spacing: -0.015em;
+      font-size: 3.75rem;
+      line-height: 1.08;
+      letter-spacing: -0.055em;
     }
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 1.2;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.025em;
   }
   @screen sm {
     h2 {
@@ -68,13 +68,15 @@
   }
   @screen 2xl {
     h2 {
-      font-size: 3.75rem;
+      font-size: 2.50rem;
       letter-spacing: -0.025em;
+      line-height: 1.15;
     }
   }
 
   h3 {
-    font-size: 1.25rem; /* Default 20px */
+    font-size: 1.5rem;
+    font-weight: 400; /* Default 20px */
   }
   @screen sm {
     h3 {
@@ -98,36 +100,36 @@
   }
   @screen 2xl {
     h3 {
-      font-size: 2.5rem; /* 40px for large screens */
+      font-size: 2.25rem; /* 40px for large screens */
     }
   }
 
-  p, span {
+  p, span, a {
     font-size: 16px;
   }
   @screen sm {
-    p, span {
+    p, span, a {
       font-size: 14px;
     }
   }
   @screen md {
-    p, span {
+    p, span, a {
       font-size: 16px;
     }
   }
   @screen lg {
-    p, span {
+    p, span, a {
       font-size: 16px;
     }
   }
   @screen xl {
-    p, span {
+    p, span, a {
       font-size: 16px;
     }
   }
   @screen 2xl {
-    p, span {
-      font-size: 22px;
+    p, span, a {
+      font-size: 18px;
     }
   }
 }

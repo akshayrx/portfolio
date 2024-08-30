@@ -26,6 +26,7 @@ function Teaser() {
       color: "#0066cc",
       opacity: 1
     })
+    
   })
 
 

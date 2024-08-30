@@ -4,7 +4,7 @@ import ButtonOutline from '../elements/ButtonOutline';
 function Notes() {
 
   return (
-    <div className="container py-6 flex flex-col md:flex-row gap-3 justify-between items-center z-0">
+    <div className="hero-notes container py-6 flex flex-col md:flex-row gap-3 justify-between items-center z-0">
         {[
             "onboarding in 3 easy steps", 
             "4 to 6 weeks delivery",

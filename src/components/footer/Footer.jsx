@@ -39,8 +39,8 @@ function Footer() {
             </div>
             <div className="w-full flex justify-between items-center pt-4 gap-4">
                 <small className='menu justify-between items-center flex font-light text-xs gap-8'>
-                    <span>&copy; 2024</span>
-                    <span><NavLink to="/" target='_blank' className='curly-braces'>this site on github</NavLink></span>
+                    <span className='text-xs'>&copy; 2024</span>
+                    <span><NavLink to="/" target='_blank' className='curly-braces text-xs'>this site on github</NavLink></span>
                 </small>
                 <small>
                     <span className='font-light text-xs'>Based in Mumbai, IN</span>

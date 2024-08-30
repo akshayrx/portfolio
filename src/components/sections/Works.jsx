@@ -28,12 +28,12 @@ function Works() {
                                     <span>Project Name</span>
                                     <span className='hidden h-2 w-2 rounded-full bg-zinc-100'></span>
                                 </div>
-                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 justify-between items-center'>
+                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 font-light 2xl:font-normal justify-between items-center'>
                                     View on Behance <FaBehance /><span className="rotate-45"><FaArrowUpLong /></span>
                                 </div>
                             </div>
                             <div className='w-full flex'>
-                                <div className='uppercase text-sm tracking-wide text-zinc-500'>2024 / design system / cms design</div>
+                                <div className='uppercase text-sm tracking-wide text-zinc-500 font-light 2xl:font-normal'>2024 / design system / cms design</div>
                             </div>
                         </div>
                     </NavLink>
@@ -56,12 +56,12 @@ function Works() {
                                     <span>Project Name</span>
                                     <span className='hidden h-2 w-2 rounded-full bg-zinc-100'></span>
                                 </div>
-                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 justify-between items-center'>
+                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 font-light 2xl:font-normal justify-between items-center'>
                                     View on Behance <FaBehance /><span className="rotate-45"><FaArrowUpLong /></span>
                                 </div>
                             </div>
                             <div className='w-full flex'>
-                                <div className='uppercase text-sm tracking-wide text-zinc-500'>2024 / design principal / cms design</div>
+                                <div className='uppercase text-sm tracking-wide text-zinc-500 font-light 2xl:font-normal'>2024 / design principal / cms design</div>
                             </div>
                         </div>
                     </NavLink>
@@ -86,12 +86,12 @@ function Works() {
                                     <span>Project Name</span>
                                     <span className='hidden h-2 w-2 rounded-full bg-zinc-100'></span>
                                 </div>
-                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 justify-between items-center'>
+                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 font-light 2xl:font-normal justify-between items-center'>
                                     View on Behance <FaBehance /><span className="rotate-45"><FaArrowUpLong /></span>
                                 </div>
                             </div>
                             <div className='w-full flex'>
-                                <div className='uppercase text-sm tracking-wide text-zinc-500'>2024 / design principal / cms design</div>
+                                <div className='uppercase text-sm tracking-wide text-zinc-500 font-light 2xl:font-normal'>2024 / design principal / cms design</div>
                             </div>
                         </div>
                     </NavLink>
@@ -114,12 +114,12 @@ function Works() {
                                     <span>Project Name</span>
                                     <span className='hidden h-2 w-2 rounded-full bg-zinc-100'></span>
                                 </div>
-                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 justify-between items-center'>
+                                <div title="Opens on Behance" className='capitalize flex gap-2 text-sm text-zinc-500 font-light 2xl:font-normal justify-between items-center'>
                                     View on Behance <FaBehance /><span className="rotate-45"><FaArrowUpLong /></span>
                                 </div>
                             </div>
                             <div className='w-full flex'>
-                                <div className='uppercase text-sm tracking-wide text-zinc-500'>2024 / design principal / cms design</div>
+                                <div className='uppercase text-sm tracking-wide text-zinc-500 font-light 2xl:font-normal'>2024 / design principal / cms design</div>
                             </div>
                         </div>
                     </NavLink>

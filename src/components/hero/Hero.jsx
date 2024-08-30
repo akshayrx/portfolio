@@ -6,7 +6,7 @@ function Hero() {
   return (
     <section data-scroll data-scroll-section data-scroll-speed='-0.50' className="hero bg-zinc-300 w-full h-dvh relative">
         <div className='container flex flex-col justify-start items-start w-full'>
-            <div className="pt-[45%] pb-10 w-full md:w-11/12 md:pt-[40%] lg:w-9/12 lg:pt-40 2xl:w-full 2xl:pt-[50%]">
+            <div className="pt-[45%] pb-10 w-full md:w-11/12 md:pt-[40%] lg:w-9/12 lg:pt-40 2xl:10/12 2xl:pt-36">
                 <Teaser />
             </div>
         </div>
