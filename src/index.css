@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  @screen sm {
+    h1 {
+      font-size: 2.25rem;
+    }
+  }
+  @screen md {
+    h1 {
+      font-size: 3.25rem;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+  }
+  @screen lg {
+    h1 {
+      font-size: 3.25rem;
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+  }
+  @screen xl {
+    h1 {
+      font-size: 3.25rem;
+    }
+  }
+  @screen 2xl {
+    h1 {
+      font-size: 6rem;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+  @screen sm {
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+  @screen md {
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+  @screen lg {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  @screen xl {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  @screen 2xl {
+    h2 {
+      font-size: 3.75rem;
+      letter-spacing: -0.025em;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Default 20px */
+  }
+  @screen sm {
+    h3 {
+      font-size: 1.125rem; /* 18px for small screens */
+    }
+  }
+  @screen md {
+    h3 {
+      font-size: 1.5rem; /* 24px for medium screens */
+    }
+  }
+  @screen lg {
+    h3 {
+      font-size: 1.75rem; /* 28px for large screens */
+    }
+  }
+  @screen xl {
+    h3 {
+      font-size: 2.5rem; /* 40px for large screens */
+    }
+  }
+  @screen 2xl {
+    h3 {
+      font-size: 2.5rem; /* 40px for large screens */
+    }
+  }
+
+  p, span {
+    font-size: 16px;
+  }
+  @screen sm {
+    p, span {
+      font-size: 14px;
+    }
+  }
+  @screen md {
+    p, span {
+      font-size: 16px;
+    }
+  }
+  @screen lg {
+    p, span {
+      font-size: 16px;
+    }
+  }
+  @screen xl {
+    p, span {
+      font-size: 16px;
+    }
+  }
+  @screen 2xl {
+    p, span {
+      font-size: 22px;
+    }
+  }
+}
+
+
+  
+
+/* .site-container-size, body, footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #d4d4d8;
+} */
+h1 > span {
+  font-size: inherit;
+  display: inline;
+}
+main, .site-container-size {
+    max-width: 1440px;
+    margin: auto;
+}
+body {
+    background-color: #d4d4d8;
+}
+.hero h1 span::before {
+    content: " ";
+}
+.hero h1 span {
+    /* color: #f5f5f5; */
+    opacity: 0.35;
+}
+.curly-braces::before {
+    content: "{ ";
+}
+.curly-braces::after {
+    content: " }";
+}
+.social-list li:hover {
+    color: #0066cc;
+}
+/* .pricing-table:last-of-type {
+  border-bottom: 1px solid gray;
+}
+.pricing-table:last-child {
+  border-bottom: 1px solid gray;
+} */
+/* .opening-statement {
+   
+    padding: 8rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
