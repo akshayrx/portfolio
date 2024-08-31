@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
 
 @layer base {
@@ -135,14 +155,16 @@
 }
 
 
-  
+.menu a {
+  font-size: 14px;
+}
 
 /* .site-container-size, body, footer {
     max-width: 1440px;
     margin: 0 auto;
     background-color: #d4d4d8;
 } */
-h1 > span {
+h1 > span, p > span {
   font-size: inherit;
   display: inline;
 }

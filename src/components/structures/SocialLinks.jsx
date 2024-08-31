@@ -13,18 +13,18 @@ function SocialLinks(props) {
           <div className="social flex items-start gap-4">
             <span><Link title="Akshay Ravikant on LinkedIn" to="https://www.linkedin.com/in/akshayravikant/" target="_blank"><FaLinkedin /></Link></span>
             <span><Link title="Akshay Ravikant on Twitter X" to="https://x.com/exJeweller" target="_blank"><FaXTwitter /></Link></span>
-            <span><Link title="Akshay Ravikant on Behance" to="#" className='opacity-25'><FaBehance /></Link></span>
-            <span><Link title="Akshay Ravikant on GutHub" to="#"><FaGithub /></Link></span>
+            <span><Link title="Akshay Ravikant on Behance" to="https://www.behance.net/akshayrx" target='_blank'><FaBehance /></Link></span>
+            <span><Link title="Akshay Ravikant on GitHub" to="https://github.com/akshayrx/portfolio" target='_blank'><FaGithub /></Link></span>
           </div>
     
   } else if(props.view === "full"){
     social = 
-      <div className=''>
+      <div>
         <p className='curly-braces text-sm pb-6 font-extralight'>I'm also at</p>
         <ul className='w-full md:w-full social-list font-extralight leading-none tracking-normal flex md:flex-row lg:flex-col justify-between gap-4'>
             <li><Link to="https://www.linkedin.com/in/akshayravikant/" target="_blank">LinkedIn</Link></li>
             <li><Link to="https://x.com/exJeweller" target="_blank">X / Twitter</Link></li>
-            <li><Link to="https://google.com" target="_blank" className='text-zinc-700'>Behance</Link></li>
+            <li><Link to="https://www.behance.net/akshayrx" target='_blank'>Behance</Link></li>
             <li><Link to="https://www.fiverr.com/ark_jewelry" target="_blank">Fiverr</Link></li>
         </ul>
       </div>
@@ -41,7 +41,7 @@ function SocialLinks(props) {
     //         <li><Link to="https://www.fiverr.com/ark_jewelry" target="_blank">Fiverr</Link></li>
     //     </ul>
     // </div>
-    <span>{social}</span>
+    <div>{social}</div>
   )
     
     

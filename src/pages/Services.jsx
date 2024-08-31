@@ -68,13 +68,19 @@ function Services() {
                       <p className='curly-braces pb-8 font-extralight text-sm'>and how it works</p>
                       <ol className="relative border-s border-zinc-800/40">
                           {serviceWorkfflowProcess.map((stage, index) => (
-                                <li className="mb-6 ms-2">   
+                                <li key={index} className="mb-6 ms-2">   
                                   <span className="absolute only:bottom-0 last:bottom-0 w-2 h-2 bg-zinc-800 rounded-full -start-1">
                                     </span>         
                                     <span className="flex items-center -mt-1 text-sm font-medium text-zinc-800">{stage.stage}</span>
                                     <p className="mb-4 text-sm font-light">{stage.meaning}</p>
                                 </li>
-                            ))}                  
+                            ))}      
+                            <li className="mb-2 ms-2">   
+                                  <span className="absolute bottom-0 w-2 h-2 bg-zinc-800 rounded-full -start-1">
+                                    </span>         
+                                    <span className="flex items-center -mt-1 text-sm font-medium text-zinc-800">Offboarding & Support</span>
+                                    <p className="mb-1 text-sm font-light">Covers 60 day support, paid retainers available</p>
+                            </li>            
                           {/* <li className="mb-6 ms-2">   
                             <span className="absolute top-0 flex items-center justify-center w-2 h-2 bg-zinc-800 rounded-full -start-1">
                               </span>         
