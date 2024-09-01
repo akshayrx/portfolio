@@ -1,12 +1,9 @@
 import React from 'react'
 import ButtonSolid from '../elements/ButtonSolid'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function Cta(props) {  
 
-  //receives props to function correctly:
-  //accepted format & props: promoTitle, buttonText and mode 
-  //<Cta promoTitle="Yes, you're at the right place." buttonText="let's talk" mode="dark" />
   return (
     <section className={`cta container py-12 w-full ${props.mode === 'light' ? 'bg-zinc-900' : 'bg-zinc-300'}`}>
         <div className={`flex py-32 px-4 gap-8 flex-col justify-center items-center ${props.mode === 'light' ? 'bg-zinc-300 text-zinc-800' : 'bg-zinc-900 text-zinc-300'} rounded-lg`}>

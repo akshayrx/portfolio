@@ -4,27 +4,6 @@ export const navItems = [
     { label: "Contact", href: "/contact" },
   ];
 
-
-// export const pageContact = {
-//   name: "contact",
-//   content: "Project enquiries & the brand works I take on begin with a short introduction. It takes less than 2 minutes to get started."
-// }
-
-// export const pageServices = {
-//   name: "services",
-//   content: "Presenting website design & development services for each stage of your growth, helping you stay on top of your user's mind."
-// }
-
-// export const pageAbout = {
-//   name: "about",
-//   content: "I help you explore the possibilities of the web with a clean and functional design and a sheer focus on your business goals."
-// }
-
-// export const defaultPageTitle = {
-//   name: "default",
-//   content: "Hey there!"
-// }
-
 export const pages = [
   {
     id:1,

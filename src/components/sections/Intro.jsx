@@ -2,7 +2,6 @@ import React from 'react'
 import VisitingCards from './VisitingCards';
 import Works from './Works';
 import Cta from '../footer/Cta';
-//import { Link } from 'react-router-dom';
 import SocialLinks from '../structures/SocialLinks';
 import { callToActions } from '../elements/Copywriting';
 

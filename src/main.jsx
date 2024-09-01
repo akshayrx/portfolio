@@ -1,35 +1,23 @@
-import { StrictMode, useEffect } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './pages/Home.jsx'
-import Portfolio from './pages/Portfolio.jsx'
-//import WorkOne from './pages/portfolio/WorkOne.jsx'
+//import Portfolio from './pages/Portfolio.jsx'
 import Services from './pages/Services.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
-import { useRouteError, useLocation } from 'react-router-dom'
-
-// function ScrollToTop() {
-//   const { pathname } = useLocation();
-
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
-
-//   return null;
-// }
+import { useRouteError } from 'react-router-dom'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />} errorElement={<ErrorBoundary />} >
       <Route path='' element={<Home />} />
-      <Route path='portfolio/' element={<Portfolio />}>
+      {/* <Route path='portfolio/' element={<Portfolio />}>
         <Route path=':designid' element={<Portfolio />} />
-      </Route>
+      </Route> */}
       <Route path='services' element={<Services />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
@@ -49,7 +37,6 @@ function ErrorBoundary() {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <ScrollToTop /> */}
     <RouterProvider router={router} />
   </StrictMode>,
 )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import SectionTitle from '../structures/SectionTitle'
 import {FaArrowUpLong} from "react-icons/fa6";
 import { FaBehance } from "react-icons/fa6";
