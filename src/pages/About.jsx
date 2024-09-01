@@ -4,9 +4,12 @@ import PageTitle from '../components/structures/PageTitle'
 import Cta from '../components/footer/Cta';
 import { KlaviyoFormTrigger }from '../components/features/KlaviyoFormTrigger'
 import SocialLinks from '../components/structures/SocialLinks';
+import { callToActions } from '../components/elements/Copywriting';
 
 
 function About() {
+
+  const ctaSectionAbout = callToActions.find((c) => c.block === "about/ctasection" );
 
   return (
     <>
@@ -43,7 +46,7 @@ function About() {
                     <p>And I strive to become one of the most recognizable website developers of the time for jewelry brands across the world.</p>
                 </div>
                 <div className='w-full md:w-full lg:w-4/12 font-extralight flex lg:flex flex-col justify-between lg:items-center lg:justify-between items-start'>
-                    <div className='font-extralight leading-none tracking-normal flex flex-col gap-3'>
+                    <div className='font-extralight flex flex-col gap-2'>
                       <p className='curly-braces lg:pb-8 text-sm'>and collaborate with specialists</p>
                         <p>Illustrators</p>
                         <p>Graphic Designers</p>
@@ -54,7 +57,7 @@ function About() {
           </div>
     </section>
     
-    <Cta promoTitle="Yes, you're at the right place." buttonText="let's talk" mode="dark" />
+    <Cta promoTitle={ctaSectionAbout.ctaTitle} buttonText={ctaSectionAbout.ctaButton} mode="dark" />
     <KlaviyoFormTrigger />
     </>
   )

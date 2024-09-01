@@ -97,19 +97,57 @@ export const portfolioWorks = [
 {   id: 1,
     image: '../../akshayrx-standby-image.png', 
     caption: 'Card 1', 
-    link: '/services',
+    link: 'https://www.behance.net/akshayrx',
     keyword: '2024 / Landing Page',
   },
 {   id: 2,  
     image: '../../akshayrx-standby-image.png', 
     caption: 'Card 2', 
-    link: '/services',
+    link: 'https://www.behance.net/akshayrx',
     keyword: '2024 / Multipage',
   },
 {   id: 3,
     image: '../../akshayrx-standby-image.png', 
     caption: 'Card 3', 
-    link: '/services',
+    link: 'https://www.behance.net/akshayrx',
     keyword: '2024 / 3 Step Funnel',
+  },
+]
+
+export const callToActions = [
+  {
+    block: "header/navigation",
+    ctaTitle: null,
+    ctaButton: "schedule a call"
+  },
+  {
+    block: "hero/subcta",
+    ctaTitle: null,
+    ctaButton: "transparent pricing"
+  },
+  {
+    block: "home/dock",
+    ctaTitle: null,
+    ctaButton: "start your website"
+  },
+  {
+    block: "home/ctasection",
+    ctaTitle: "yes, you're at the right place",
+    ctaButton: "schedule a call"
+  },
+  {
+    block: "services/ctasection",
+    ctaTitle: "yes, you're at the right place",
+    ctaButton: "schedule a call"
+  },
+  {
+    block: "about/ctasection",
+    ctaTitle: "yes, you're at the right place",
+    ctaButton: "schedule a call"
+  },
+  {
+    block: "contact/ctasection",
+    ctaTitle: "yes, you're at the right place",
+    ctaButton: "schedule a call"
   },
 ]

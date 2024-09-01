@@ -4,8 +4,12 @@ import Works from './Works';
 import Cta from '../footer/Cta';
 //import { Link } from 'react-router-dom';
 import SocialLinks from '../structures/SocialLinks';
+import { callToActions } from '../elements/Copywriting';
 
 function Intro() {
+    
+    const ctaSectionHome = callToActions.find((c) => c.block === "home/ctasection" );
+
   return (
     <>
     <div data-scroll data-scroll-section data-scroll-speed='0.10' className='introduction w-full rounded-tl-3xl rounded-tr-3xl bg-zinc-900 text-zinc-200 shadow-[0px_-30px_60px_0px_rgba(23,22,18,0.7)] z-50'>
@@ -31,7 +35,7 @@ function Intro() {
         <Works />
         <VisitingCards />
     </div>
-    <Cta promoTitle="Yes, you're at the right place." buttonText="let's talk" mode="light" />
+    <Cta promoTitle={ctaSectionHome.ctaTitle} buttonText={ctaSectionHome.ctaButton} mode="light" />
     </>
   )
 }

@@ -4,8 +4,12 @@ import { KlaviyoFormTrigger }from '../components/features/KlaviyoFormTrigger'
 import PageTitle from '../components/structures/PageTitle'
 import SocialLinks from '../components/structures/SocialLinks'
 import Cta from '../components/footer/Cta'
+import { callToActions } from '../components/elements/Copywriting'
 
 function Contact() {
+  
+  const ctaSectionContact = callToActions.find((c) => c.block === "contact/ctasection" );
+
   return (
     <>
     <section className='container w-full py-20'>
@@ -27,7 +31,7 @@ function Contact() {
                 </div>
             </div>
     </section>
-    <Cta promoTitle="Yes, you're at the right place." buttonText="let's talk" mode="dark" />
+    <Cta promoTitle={ctaSectionContact.ctaTitle} buttonText={ctaSectionContact.ctaButton} mode="dark" />
     <KlaviyoFormTrigger />
     </>
   )

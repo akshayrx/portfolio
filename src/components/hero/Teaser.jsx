@@ -15,7 +15,7 @@ function Teaser() {
       scrollTrigger: {
         trigger: ".hero",
         start: "50% 50%",
-        end: "50% 35%",
+        end: "50% 40%",
         duration:1,
         //markers: true,
         scrub: 1

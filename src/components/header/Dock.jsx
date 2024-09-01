@@ -4,11 +4,14 @@ import Name from '../hero/Name'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { callToActions } from '../elements/Copywriting';
 
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function Dock() {
+  
+    const ctaTextDock = callToActions.find((c) => c.block === "home/dock" );
 
     const dockButton = useRef()
 
@@ -51,7 +54,7 @@ function Dock() {
                     </div>
                     <div className=''>
                         <span className='hidden name-or-action w-12'><Name /></span>
-                        <span className='name-or-action'><ButtonSolid cta="order a website" /></span>
+                        <span className='name-or-action'><ButtonSolid cta={ctaTextDock.ctaButton} /></span>
                     </div>
                     <div className='dock-menu-right flex justify-around items-center'>
                         <span className='hidden'><a href="">Services</a></span>

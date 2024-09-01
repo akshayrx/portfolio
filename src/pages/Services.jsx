@@ -4,9 +4,11 @@ import PageTitle from '../components/structures/PageTitle'
 import SectionTitle from '../components/structures/SectionTitle'
 import Cta from '../components/footer/Cta';
 import { KlaviyoFormTrigger }from '../components/features/KlaviyoFormTrigger'
-import { simplePricing, serviceWorkfflowProcess } from '../components/elements/Copywriting';
+import { simplePricing, serviceWorkfflowProcess, callToActions } from '../components/elements/Copywriting';
 
 function Services() {
+  
+  const ctaSectionServices = callToActions.find((c) => c.block === "services/ctasection" );
   const location = useLocation();
 
   useEffect(() => {
@@ -180,7 +182,7 @@ function Services() {
           </div>
         </div>
     </section>
-    <Cta promoTitle="Yes, you're at the right place." buttonText="let's talk" mode="dark" />
+    <Cta promoTitle={ctaSectionServices.ctaTitle} buttonText={ctaSectionServices.ctaButton} mode="dark" />
     <KlaviyoFormTrigger />
     </>
   )

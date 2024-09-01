@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import ButtonSolid from '../elements/ButtonSolid'
-import { navItems } from '../elements/Copywriting'
+import { callToActions, navItems } from '../elements/Copywriting'
 import { FiMenu } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
-import { KlaviyoFormTrigger }from '../features/KlaviyoFormTrigger'
+// import { KlaviyoFormTrigger }from '../features/KlaviyoFormTrigger'
 
 
 function Navbar() {
 
+        const ctaTextNavbar = callToActions.find((c) => c.block === "header/navigation" );
         const [mobileIsOpen, setMobileIsOpen] = useState(false);
       
         const toggleMenu = () => {
@@ -47,7 +48,7 @@ function Navbar() {
                                 </li>
                             ))}
                         </ul>
-                        <ButtonSolid url="/services" cta="book now" buttonMode="dark" />
+                        <ButtonSolid url="/" cta={ctaTextNavbar.ctaButton} buttonMode="dark" />
                     </div>
                 </div>
                 {/* <ul className='menu hidden lg:hidden md:flex md:items-center md:space-x-6 font-normal'>
@@ -104,7 +105,7 @@ function Navbar() {
                     
                 </div>
             )} */}
-            <KlaviyoFormTrigger />
+            {/* <KlaviyoFormTrigger /> */}
         </nav>
     </header>
   )

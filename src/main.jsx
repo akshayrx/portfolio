@@ -1,4 +1,4 @@
-import { StrictMode } from 'react'
+import { StrictMode, useEffect } from 'react'
 import { createRoot } from 'react-dom/client'
 // import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
@@ -11,8 +11,17 @@ import Portfolio from './pages/Portfolio.jsx'
 import Services from './pages/Services.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
-import { useRouteError } from 'react-router-dom'
+import { useRouteError, useLocation } from 'react-router-dom'
 
+// function ScrollToTop() {
+//   const { pathname } = useLocation();
+
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+
+//   return null;
+// }
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -40,6 +49,7 @@ function ErrorBoundary() {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    {/* <ScrollToTop /> */}
     <RouterProvider router={router} />
   </StrictMode>,
 )
