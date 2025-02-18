@@ -63,12 +63,12 @@ function Services() {
                                     <p className="mb-4 text-sm font-light">{stage.meaning}</p>
                                 </li>
                             ))}      
-                            <li className="mb-2 ms-2">   
+                            {/* <li className="mb-2 ms-2">   
                                   <span className="absolute bottom-0 w-2 h-2 bg-zinc-800 rounded-full -start-1">
                                     </span>         
                                     <span className="flex items-center -mt-1 text-sm font-medium text-zinc-800">Offboarding & Support</span>
                                     <p className="mb-1 text-sm font-light">Covers 60 day support, paid retainers available</p>
-                            </li>            
+                            </li>             */}
                       </ol>
                     </div>
                 </div>

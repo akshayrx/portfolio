@@ -66,10 +66,10 @@ export const serviceWorkfflowProcess = [
     stage: "Launch",
     meaning: "Remaining payment, publising for public view"
   },
-  // {
-  //   stage: "Offboarding & Suuport",
-  //   meaning: "Covers 60 day support, paid retainers available"
-  // },
+  {
+    stage: "Offboarding & Suuport",
+    meaning: "Covers 30 day support, paid retainers available"
+  }
 ]
 
 export const portfolioWorks = [
